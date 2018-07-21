@@ -87,18 +87,32 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
-html, body  {
-	margin: 0;
+html,
+body {
+  margin: 0;
 }
 /* Correct `block` display not defined in IE 8/9.*/
-article,aside,details,figcaption,figure,footer,header,main,nav,section,summary {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
   display: block;
 }
 
 /* Correct `inline-block` display not defined in IE 8/9. */
-audio,canvas,progress,video {
+audio,
+canvas,
+progress,
+video {
   display: inline-block;
-  vertical-align: baseline; 
+  vertical-align: baseline;
 }
 
 /*Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices.*/
@@ -121,7 +135,8 @@ a:hover {
 }
 
 /*Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.*/
-b,strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -149,24 +164,58 @@ svg:not(:root) {
 }
 
 pre {
-	background: black;
-	padding: 1em 2em;
-	color: #F2EFB5;
-	font-size: 1.4em;
-	white-space: pre-wrap; 
- 	white-space: -moz-pre-wrap;  
-	white-space: -pre-wrap;      
-	white-space: -o-pre-wrap;  
-	word-wrap: break-word;
-	overflow: auto;
+  background: black;
+  padding: 1em 2em;
+  color: #f2efb5;
+  font-size: 1.4em;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  overflow: auto;
 }
 
+/* Specific elements
+ ========================================================================*/
+header,
+main,
+footer {
+  padding: 0 2em;
+}
+header {
+  border-bottom: 1px solid rgb(157, 189, 198);
+  margin-bottom: 1em;
+  background: rgb(218, 234, 239);
+}
+header h1 {
+  color: rgb(127, 64, 45);
+  padding-top: 1em;
+}
+
+main h2 {
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+}
+main h3 {
+  margin-top: 0.2em;
+  margin-bottom: 0;
+}
+footer {
+  background: rgb(157, 189, 198);
+  padding: 2em;
+  font-size: 0.8em;
+}
 /* Forms
    ========================================================================== */
 
 /*Address margins set differently in Firefox 4+, Safari 5, and Chrome.*/
 
-button, input,optgroup,select,textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   margin: 0;
 }
 
@@ -197,7 +246,7 @@ input {
 
 /*Address `appearance` set to `searchfield` in Safari 5 and Chrome. Address `box-sizing` set to `border-box` in Safari 5 and Chrome */
 
-input[type="search"] {
+input[type='search'] {
   -webkit-appearance: textfield;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
@@ -206,8 +255,8 @@ input[type="search"] {
 
 /*  Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance).*/
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -220,22 +269,22 @@ textarea {
 /* For modern browsers */
 .cf:before,
 .cf:after {
-    content:"";
-    display:table;
+  content: '';
+  display: table;
 }
 .cf:after {
-    clear:both;
+  clear: both;
 }
 /* For IE 6/7 (trigger hasLayout) */
 .cf {
-    zoom:1;
+  zoom: 1;
 }
 .cr {
-	clear: right;
+  clear: right;
 }
 .cl {
-	clear: left;
+  clear: left;
 }
 .cb {
-	clear: both;
+  clear: both;
 }
